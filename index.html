@@ -1,40 +1,29 @@
-export default {
-  async fetch(request, env, ctx) {
-    const html = `
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Bán tên miền. Liên hệ 0.3.3.3-393-3.6.8</title>
-        <style>
-          html, body {
-            height: 100%;
-            margin: 0;
-          }
-          body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: sans-serif;
-            background: #f0f0f0;
-          }
-          h1 {
-            font-size: 3rem;
-            color: #333;
-          }
-        </style>
-      </head>
-      <body>
-        <h1>Hello World!</h1>
-        <h5>sell domain. contact: 0.3.3.3-3.9.3-3.6.8</h5>
-      </body>
-      </html>
-    `;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bán tên miền. Liên hệ 0.3.3.3-393-3.6.8</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <h5>sell domain. contact: 0.3.3.3-3.9.3-3.6.8</h5>
+</body>
+</html>
 
-    return new Response(html, {
-      headers: {
-        'Content-Type': 'text/html;charset=UTF-8',
-      },
-    });
-  },
-};
